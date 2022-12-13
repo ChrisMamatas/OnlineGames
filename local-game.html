@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="title">
+            <a href="index.html">
+                <h1>Tic Tac Toe</h1>
+            </a>
+        </div>
+
+        <div id="boardRow">
+            <button class="but" id="0" onclick="gridButtonClick(this.id)"></button>
+            <button class="but" id="1" onclick="gridButtonClick(this.id)"></button>
+            <button class="but" id="2" onclick="gridButtonClick(this.id)"></button>
+        </div>
+        <div id="boardRow">
+            <button class="but" id="3" onclick="gridButtonClick(this.id)"></button>
+            <button class="but" id="4" onclick="gridButtonClick(this.id)"></button>
+            <button class="but" id="5" onclick="gridButtonClick(this.id)"></button>
+        </div>
+        <div id="boardRow">
+            <button class="but" id="6" onclick="gridButtonClick(this.id)"></button>
+            <button class="but" id="7" onclick="gridButtonClick(this.id)"></button>
+            <button class="but" id="8" onclick="gridButtonClick(this.id)"></button>
+        </div>
+
+        <div id="subtitle">
+            <h3 id="xWins">
+                Wins: 0
+            </h3>
+            <h3 id="oWins">
+                Losses: 0
+            </h3>
+            <h3 id="ties">
+                Ties: 0
+            </h3>
+        </div>
+        
+        <button id="playAgainButton" onclick="resetGame()">Play Again</button>
+        
+        <script src="LocalGame.js"></script>
+    
+    </body>
+</html>
